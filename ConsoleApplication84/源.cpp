@@ -11,15 +11,16 @@ void main()
 	for (int i = 0; i < peopleNum; i++)
 	{
 		cout << "参加学生的人有：";
-		cout << a[i] << " " << endl;
+		cout << a[i] << " " ;
 	}
+	cout << endl;
 	while (1)
 	{
 		if (a[i] > 0)
 			n++;
 		if (n == interval)
 		{
-			cout << "淘汰" << a[i] << " ";
+			cout << "淘汰：" << a[i] << " ";
 			a[i] = 0;
 			end--;
 			n = 0;
@@ -33,5 +34,5 @@ void main()
 	cout << endl;
 	for (int i = 0; i < 10; i++)
 		if (a[i]>0)
-			cout << a[i];
+			cout <<"胜利者是："<<a[i];
 }
